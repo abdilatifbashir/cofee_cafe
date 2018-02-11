@@ -19,11 +19,40 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/increment"
+        android:text="+"
+        android:textSize="16sp"
+        android:onClick="increment"
+        android:textColor="@android:color/black"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/number_of_cups"
         android:text="0"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/decrement"
+        android:text="-"
+        android:textSize="16sp"
+        android:onClick="decrment"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_text_view"
+        android:text="$0"
         android:textSize="16sp"
         android:textColor="@android:color/black"/>
     <Button
