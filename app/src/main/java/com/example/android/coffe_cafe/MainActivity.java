@@ -11,7 +11,7 @@ import java.text.NumberFormat;
 
 
 public class MainActivity extends AppCompatActivity {
-    int quatity=2;
+    int quatity=0;
     public static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submitOrder(View view) {
-        display(2);
-        displayPrice(2 * 5);
+        display(quatity);
+        displayPrice(quatity * 5);
         Log.d(TAG, "submitOrder:");
 
 
@@ -40,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void decrment(View view) {
-        quatity=quatity-1;
+        this.quatity=quatity-1;
         display(quatity);
 
     }
 public void increment(View view){
-        quatity=quatity+1;
+        this.quatity=quatity+1;
         display(quatity);
 
 }
