@@ -21,9 +21,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submitOrder(View view) {
+        String myMessage= quatity + " cups of coffe ordered successfully";
         display(quatity);
         displayPrice(quatity * 5);
+        displayMessage(myMessage);
         Log.d(TAG, "submitOrder:");
+
 
 
     }
@@ -48,6 +51,10 @@ public void increment(View view){
         this.quatity=quatity+1;
         display(quatity);
 
+}
+public void displayMessage(String message){
+    TextView amountCoffeTextView=findViewById(R.id.total_amount_count);
+    amountCoffeTextView.setText(""+ message);
 }
 
 }

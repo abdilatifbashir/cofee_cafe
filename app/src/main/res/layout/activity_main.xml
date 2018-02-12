@@ -55,6 +55,13 @@
         android:text="$0"
         android:textSize="16sp"
         android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_amount_count"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
