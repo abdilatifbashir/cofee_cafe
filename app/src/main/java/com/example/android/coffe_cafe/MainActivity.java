@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitOrder(View view) {
         String myMessage= quatity + " cups of coffe ordered successfully";
-        display(quatity);
+        //display(quatity);
         displayPrice(quatity * 5);
         displayMessage(myMessage);
         Log.d(TAG, "submitOrder:");
@@ -43,8 +43,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void decrment(View view) {
-        this.quatity=quatity-1;
-        display(quatity);
+
+        if(quatity>0){
+            this.quatity=quatity-1;
+            display(quatity);
+
+        }
+
 
     }
 public void increment(View view){
